@@ -11,10 +11,13 @@ module.exports = function(handler, options) {
 
   return function(event, context, callback) {
     return Promise.resolve().then(() => {
-      if (!event.body) {
-        event.body = {};
-      } else if (typeof event.body === 'string') {
-        event.body = JSON.parse(event.body);
+      const contentType = event.headers && event.headers['content-type'] || 'application/json';
+      if (contentType.indexOf('application/json') !== -1) {
+        if (!event.body) {
+          event.body = {};
+        } else if (typeof event.body === 'string') {
+          event.body = JSON.parse(event.body);
+        }
       }
 
       return Promise.resolve(handler(event, context)).then((response) => {

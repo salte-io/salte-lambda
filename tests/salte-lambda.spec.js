@@ -2,7 +2,7 @@ import test from 'ava';
 
 import wrapper from '../src/salte-lambda.js';
 
-test.cb('should suppot successful callbacks', (t) => {
+test.cb('should support successful callbacks', (t) => {
   const handler = wrapper((event) => {
     return event.body;
   });
@@ -28,7 +28,7 @@ test.cb('should suppot successful callbacks', (t) => {
   });
 });
 
-test.cb('should suppot failed callbacks', (t) => {
+test.cb('should support failed callbacks', (t) => {
   const handler = wrapper((event) => {
     return Promise.reject({
       statusCode: 404,
@@ -74,6 +74,25 @@ test('should support successful responses', async (t) => {
   t.deepEqual(response, {
     name: 'jim'
   });
+});
+
+test('should not parse the body if the "Content-Type" is not application/json', async (t) => {
+  const handler = wrapper((event) => {
+    return event.body;
+  });
+
+  const response = await handler({
+    body: JSON.stringify({
+      name: 'jim'
+    }),
+    headers: {
+      'content-type': 'application/xml'
+    }
+  });
+
+  t.deepEqual(response, JSON.stringify({
+    name: 'jim'
+  }));
 });
 
 test('should support conditionally parsing the body', async (t) => {
