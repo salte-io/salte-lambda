@@ -46,9 +46,6 @@
     ],
     "source": [
       "src/**/*.js"
-    ],
-    "require": [
-      "dotenv/config"
     ]
   },
   "nyc": {
