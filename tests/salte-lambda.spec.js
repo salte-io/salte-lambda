@@ -159,6 +159,25 @@ test('should support default the code and status code of failed responses', asyn
   });
 });
 
+test('should support a dynamic code based on the status code', async (t) => {
+  const handler = wrapper((event) => {
+    return Promise.reject({
+      statusCode: 404,
+      message: 'Not Found'
+    });
+  });
+
+  const error = await t.throws(handler({
+    body: JSON.stringify()
+  }));
+
+  t.deepEqual(error, {
+    statusCode: 404,
+    code: 'not_found',
+    message: 'Not Found'
+  });
+});
+
 test('should overriding the formatError funtion', async (t) => {
   const handler = wrapper((event) => {
     return Promise.reject({
