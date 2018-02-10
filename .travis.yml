@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+  - 6
+  - 7
+  - 8
+  - 9
+cache:
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/
+script:
+  - yarn start lint
+  - yarn start test
+after_success:
+  - yarn start report-coverage
+  - yarn start semantic-release
+notifications:
+  email: change
