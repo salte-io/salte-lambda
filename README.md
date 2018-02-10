@@ -1,4 +1,4 @@
-# Salte Auth
+# Salte Lambda
 
 [![Gitter][gitter-image]][gitter-url]
 [![NPM Version][npm-version-image]][npm-url]
