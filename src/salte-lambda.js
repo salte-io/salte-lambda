@@ -1,9 +1,12 @@
 module.exports = function(handler, options) {
   options = Object.assign({
     formatError: function(error) {
+      const status = require('statuses');
+      const statusCode = error.statusCode || 500;
+
       return {
-        statusCode: error.statusCode || 500,
-        code: error.code || 'internal_server_error',
+        statusCode: statusCode,
+        code: error.code || status[statusCode].toLowerCase().replace(/\s/g, '_'),
         message: error.message
       };
     }
