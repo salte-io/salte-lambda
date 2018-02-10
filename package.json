@@ -65,5 +65,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "statuses": "^1.4.0"
   }
 }
