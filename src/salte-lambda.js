@@ -1,14 +1,14 @@
 module.exports = function(handler, options) {
   options = Object.assign({
-    formatError: function(error) {
+    formatError: function(options) {
       const status = require('statuses');
-      const statusCode = error.statusCode || 500;
+      const statusCode = options.statusCode || 500;
 
-      return {
-        statusCode: statusCode,
-        code: error.code || status[statusCode].toLowerCase().replace(/\s/g, '_'),
-        message: error.message
-      };
+      const error = new Error();
+      error.message = options.message;
+      error.statusCode = statusCode;
+      error.code = options.code || status[statusCode].toLowerCase().replace(/\s/g, '_');
+      return error;
     }
   }, options);
 
