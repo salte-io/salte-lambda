@@ -1,6 +1,4 @@
-extends:
-  - eslint:recommended
-  - google
+extends: eslint:recommended
 parserOptions:
   ecmaVersion: 6
 env:
