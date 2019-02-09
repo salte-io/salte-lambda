@@ -1,6 +1,5 @@
 # Salte Lambda
 
-[![Gitter][gitter-image]][gitter-url]
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
@@ -42,15 +41,12 @@ exports.handler = wrapper((event, context) => {
 });
 ```
 
-[gitter-image]: https://badges.gitter.im/salte-io/salte-lambda.svg
-[gitter-url]: https://gitter.im/salte-io/salte-lambda?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-
 [npm-version-image]: https://img.shields.io/npm/v/@salte-io/salte-lambda.svg?style=flat
 [npm-downloads-image]: https://img.shields.io/npm/dm/@salte-io/salte-lambda.svg?style=flat
 [npm-url]: https://npmjs.org/package/@salte-io/salte-lambda
 
-[travis-ci-image]: https://img.shields.io/travis/salte-io/salte-lambda/master.svg?style=flat
-[travis-ci-url]: https://travis-ci.org/salte-io/salte-lambda
+[travis-ci-image]: https://img.shields.io/travis/com/salte-io/salte-lambda/master.svg?style=flat
+[travis-ci-url]: https://travis-ci.com/salte-io/salte-lambda
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-lambda/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-lambda?branch=master
