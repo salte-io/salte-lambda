@@ -38,7 +38,7 @@
     "nps": "^5.9.8",
     "nyc": "^15.0.0",
     "remove-lockfiles": "^2.0.0",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^16.0.0"
   },
   "ava": {
     "files": [
