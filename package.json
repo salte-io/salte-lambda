@@ -33,7 +33,7 @@
     "ava": "^2.3.0",
     "coveralls": "^3.0.6",
     "eslint": "^6.0.0",
-    "eslint-plugin-ava": "^9.0.0",
+    "eslint-plugin-ava": "^10.0.0",
     "husky": "^4.0.2",
     "nps": "^5.9.8",
     "nyc": "^15.0.0",
