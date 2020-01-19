@@ -30,7 +30,7 @@
     "statuses": "^1.4.0"
   },
   "devDependencies": {
-    "ava": "^2.3.0",
+    "ava": "^3.0.0",
     "coveralls": "^3.0.6",
     "eslint": "^6.0.0",
     "eslint-plugin-ava": "^9.0.0",
