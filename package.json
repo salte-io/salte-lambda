@@ -23,19 +23,23 @@
     "url": "https://github.com/salte-io/salte-lambda.git"
   },
   "scripts": {
-    "start": "nps"
+    "lint": "eslint src/**/*.js tests/**/*.js",
+    "test": "nyc ava",
+    "test:tdd": "ava -w",
+    "report-coverage": "coveralls < coverage/lcov.info",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "dependencies": {
     "statuses": "^1.4.0"
   },
   "devDependencies": {
-    "ava": "^2.3.0",
+    "ava": "^3.1.0",
     "coveralls": "^3.0.6",
     "eslint": "^6.0.0",
     "eslint-plugin-ava": "^10.0.0",
+    "esm": "^3.2.25",
     "husky": "^4.0.2",
-    "nps": "^5.9.8",
     "nyc": "^15.0.0",
     "remove-lockfiles": "^2.0.0",
     "semantic-release": "^17.0.0"
@@ -44,8 +48,8 @@
     "files": [
       "tests/**/*.spec.js"
     ],
-    "sources": [
-      "src/**/*.js"
+    "require": [
+      "esm"
     ]
   },
   "nyc": {
