@@ -12,10 +12,10 @@ branches:
     - master
     - /^greenkeeper/.*$/
 script:
-  - npm start lint
-  - npm start test
+  - npm run lint
+  - npm run test
 after_success:
-  - npm start report-coverage
-  - npm start semantic-release
+  - npm run report-coverage
+  - npm run semantic-release
 notifications:
   email: change
