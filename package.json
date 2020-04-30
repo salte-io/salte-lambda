@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "statuses": "^1.4.0"
+    "statuses": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^3.1.0",
