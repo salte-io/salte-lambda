@@ -1,13 +1,13 @@
 module.exports = function(handler, options) {
   options = Object.assign({
     formatError: function(options) {
-      const status = require('statuses');
+      const { message: statusMessages } = require('statuses');
       const statusCode = options.statusCode || 500;
 
       const error = new Error();
       error.message = options.message;
       error.statusCode = statusCode;
-      error.code = options.code || status[statusCode].toLowerCase().replace(/\s/g, '_');
+      error.code = options.code || statusMessages[statusCode].toLowerCase().replace(/\s/g, '_');
       return error;
     }
   }, options);
