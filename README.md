@@ -2,11 +2,10 @@
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
-[![Travis][travis-ci-image]][travis-ci-url]
+[![CI Build][github-actions-image]][github-actions-url]
 [![Coveralls][coveralls-image]][coveralls-url]
 
 [![semantic-release][semantic-release-image]][semantic-release-url]
-[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 An opinionated wrapper for AWS Lambda that enables the use of Promises.
 
@@ -44,17 +43,11 @@ exports.handler = wrapper((event, context) => {
 [npm-downloads-image]: https://img.shields.io/npm/dm/@salte-io/salte-lambda.svg?style=flat
 [npm-url]: https://npmjs.org/package/@salte-io/salte-lambda
 
-[travis-ci-image]: https://img.shields.io/travis/com/salte-io/salte-lambda/master.svg?style=flat
-[travis-ci-url]: https://travis-ci.com/salte-io/salte-lambda
+[github-actions-image]: https://github.com/salte-io/salte-lambda/actions/workflows/ci.yml/badge.svg?branch=master
+[github-actions-url]: https://github.com/salte-io/salte-lambda/actions/workflows/ci.yml
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-lambda/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-lambda?branch=master
 
-[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-url]: https://commitizen.github.io/cz-cli/
-
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-
-[greenkeeper-image]: https://badges.greenkeeper.io/salte-io/salte-lambda.svg
-[greenkeeper-url]: https://greenkeeper.io

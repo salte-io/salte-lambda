@@ -27,7 +27,8 @@
     "test": "nyc ava",
     "test:tdd": "ava -w",
     "report-coverage": "coveralls < coverage/lcov.info",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "dependencies": {
