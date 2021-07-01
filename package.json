@@ -9,7 +9,7 @@
   "homepage": "https://github.com/salte-io/salte-lambda",
   "bugs": "https://github.com/salte-io/salte-lambda/issues",
   "contributors": [
-    "Ceci Woodward <ceci@salte.io>",
+    "Cecilia Woodward <ceci@salte.io>",
     "Dave Woodward <dave@salte.io>"
   ],
   "keywords": [
@@ -27,7 +27,8 @@
     "test": "nyc ava",
     "test:tdd": "ava -w",
     "report-coverage": "coveralls < coverage/lcov.info",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "dependencies": {
