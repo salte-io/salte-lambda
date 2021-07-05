@@ -43,11 +43,11 @@ exports.handler = wrapper((event, context) => {
 [npm-downloads-image]: https://img.shields.io/npm/dm/@salte-io/salte-lambda.svg?style=flat
 [npm-url]: https://npmjs.org/package/@salte-io/salte-lambda
 
-[github-actions-image]: https://github.com/salte-io/salte-lambda/actions/workflows/ci.yml/badge.svg?branch=master
+[github-actions-image]: https://github.com/salte-io/salte-lambda/actions/workflows/ci.yml/badge.svg?branch=main
 [github-actions-url]: https://github.com/salte-io/salte-lambda/actions/workflows/ci.yml
 
-[coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-lambda/master.svg
-[coveralls-url]: https://coveralls.io/github/salte-io/salte-lambda?branch=master
+[coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-lambda/main.svg
+[coveralls-url]: https://coveralls.io/github/salte-io/salte-lambda?branch=main
 
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
