@@ -43,7 +43,7 @@
     "husky": "^7.0.0",
     "nyc": "^15.0.0",
     "remove-lockfiles": "^2.0.0",
-    "semantic-release": "^17.0.0"
+    "semantic-release": "^18.0.0"
   },
   "ava": {
     "files": [
