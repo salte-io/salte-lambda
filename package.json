@@ -35,7 +35,7 @@
     "statuses": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^3.1.0",
+    "ava": "^4.0.1",
     "coveralls": "^3.0.6",
     "eslint": "^7.1.0",
     "eslint-plugin-ava": "^12.0.0",
